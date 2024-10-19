@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify_Klonu</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- logo -->
+    <link rel="shortcut icon" href="./images/no-text-logo.png" type="image/x-icon">
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+<body>
+    <!-- Aside -->
+    <div class="layout">
+        <aside>
+            <figure>
+                <img src="./images/no-text-logo.png" alt="">
+                <span>Spotify</span>
+            </figure>
+            <nav>
+                <a href="./index.html"><i class="bi bi-house"></i><span>Anasayfa</span></a>
+                <a href="#">
+                    <i class="bi bi-search"></i>
+                    <span>Arama</span></a>
+                <a href="#">
+                    <i class="bi bi-collection"></i>
+                    <span>Kütüphane</span></a>
+                <a href="#">
+                    <i class="bi bi-music-note-list"></i>
+                    <span>Çalma Listeleri</span></a>
+                <a href="#">
+                    <i class="bi bi-heart"></i>
+                    <span>Begenilen Şarkılar</span></a>
+            </nav>
+        </aside>
+
+        <!-- Main -->
+        <main>
+            <!-- Header -->
+            <header>
+                <form>
+                    <input type="text" placeholder="Müzik Arayın.">
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <nav>
+                    <span>Premium</span>
+                    <span>Destek</span>
+                    <span>Oturum Aç</span>
+
+                </nav>
+            </header>
+
+
+            <!-- Şarkılar alanı  -->
+
+            <section>
+                <h1 id="title">Popüler Müzikler</h1>
+
+                <div class="list">
+                    <!-- kart -->
+                    <!-- <div class="card">
+                    <figure>
+                        <img src="https://i.scdn.co/image/ab67616d00001e02310f78a4a2d3f2c7e2a02fd7" alt="">
+                        <div class="play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+                    </figure>
+
+
+                    <h4>Ellie Goulding</h4>
+                    <h4>My Blood..</h4>
+                </div> -->
+
+                    <!-- loader -->
+                    <!-- <div class="loader">
+                    <div class="audio-player">
+                        <div class="album-cover"></div>
+                        <div class="player-controls">
+                            <div class="song-info">
+                                <div class="song-title">Song Title</div>
+                                <p class="artist">Artist</p>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="buttons">
+                                <button class="play-btn"><svg viewBox="0 0 16 16" class="bi bi-play-fill"
+                                        fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"
+                                        style="color: white">
+                                        <path fill="white"
+                                            d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z">
+                                        </path>
+                                    </svg></button>
+                                <button class="pause-btn"><svg viewBox="0 0 16 16" class="bi bi-pause-fill"
+                                        fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"
+                                        style="color: white">
+                                        <path fill="white"
+                                            d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Player Alanı -->
+    <div class="player">
+        <!-- Şarkı Bilgileri -->
+        <div class="info">
+            <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/f1/95/04/f1950424-2ae5-55ff-580d-d52e8300ec1b/dj.iedkotfi.jpg/400x400cc.jpg" />
+            <div>
+                <h5>Şımarık</h5>
+                <p>Tarkan</p>
+            </div>
+        </div>
+        <!--Oynatıcı  -->
+        <audio controls autoplay muted>
+            <source
+                src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6c/7d/69/6c7d699a-535b-11d0-3df3-437a529d1bf9/mzaf_10555292832579044244.plus.aac.ep.m4a"
+                type="audio/aac" />
+        </audio>
+        <!-- İconlar -->
+        <div class="icons">
+            <i class="bi bi-music-note-list"></i>
+            <i class="bi bi-boombox-fill"></i>
+            <i class="bi bi-pc-display"></i>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
